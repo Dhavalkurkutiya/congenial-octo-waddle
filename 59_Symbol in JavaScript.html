@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
+  <!-- Android Chrome -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!-- ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Messenger - Responsive Bootstrap Application</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="icon/fav-icon.png" type="image/x-icon" />
+  <!-- Template core CSS -->
+  <link href="template.min.css" rel="stylesheet">
+  <style type="text/css" media="all">
+    header {
+      grid-area: header;
+      background-color: #fed330;
+      padding: 20px;
+    }
+
+    article {
+      grid-area: content;
+      background-color: #20bf6b;
+      padding: 20px;
+    }
+    article h1{
+      text-align: center;
+    }
+    aside {
+      grid-area: sidebar;
+      background-color: #45aaf2;
+    }
+
+    footer {
+      padding: 20px;
+      grid-area: footer;
+      background-color: #fd9644;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr 3fr;
+      grid-template-areas: "header header""sidebar content""footer footer";
+    }
+
+@media (max-width: 700px) {
+      .wrapper {
+        grid-template-columns: 4fr;
+        grid-template-areas: "header""content""sidebar""footer";
+      }
+    }
+  </style>
+</head>
+<!-- Head -->
+
+<body>
+  <div class="wrapper">
+    <header>
+      Header
+    </header>
+    <article>
+      <h1>Welcome</h1>
+    </article>
+    <aside>
+      <ul>
+        <li>Sidebar</li>
+      </ul>
+    </aside>
+    <footer>
+      Footer
+    </footer>
+  </div>
+  <!-- Scripts -->
+  <script src="js/eruda" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    eruda.init()
+    eruda.show();
+    eruda.show('console');
+    //console.log(eruda);
+  </script>
+  <script src="js/59_script.js" type="text/javascript" charset="utf-8"></script>
+  <!-- Scripts -->
+</body>
+
+</html>

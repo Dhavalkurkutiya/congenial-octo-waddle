@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
+  <!-- Android Chrome -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!-- ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Messenger - Responsive Bootstrap Application</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="icon/fav-icon.png" type="image/x-icon" />
+  <!-- Template core CSS -->
+  <style type="text/css" media="all">
+    .container {
+      text-align: center;
+      margin: 23px;
+    }
+    table {
+      user-select: none;
+      margin: 10px auto;
+    }
+    input {
+      outline: none;
+      border-radius: 5px;
+      font-size: 34px;
+      border: 1px solid rgba(90,118,253,0.5);
+      box-shadow: 5px 10px 30px rgba(90,118,253,0.5);
+    }
+    button {
+      width: 100px;
+      height: 40px;
+      background-color: #5a76fd;
+      color: #fff;
+      box-shadow: 5px 10px 30px rgba(90,118,253,0.5);
+      border: none;
+      outline: none;
+      border-radius: 5px;
+    }
+    button:hover{
+      background-color: #5a76fd;
+      color: #fff;
+      box-shadow: 5px 10px 30px rgba(90,118,253,0.5);
+      transition: all ease 0.3s;
+    }
+    .calculator{
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Calculator</h1>
+    <div class="calculator">
+    <input type="text" name="screen" id="screen" value="" />
+    <table border="0">
+      <tr>
+        <td>
+          <button type="submit">(</button>
+          <button type="submit">)</button>
+          <button type="submit">C</button>
+          <button type="submit">%</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button type="submit">4</button>
+          <button type="submit">5</button>
+          <button type="submit">6</button>
+          <button type="submit">x</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button type="submit">4</button>
+          <button type="submit">5</button>
+          <button type="submit">6</button>
+          <button type="submit">-</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button type="submit">1</button>
+          <button type="submit">2</button>
+          <button type="submit">3</button>
+          <button type="submit">+</button>
+        </td>
+      </tr>  <tr>
+        <td>
+          <button type="submit">0</button>
+          <button type="submit">00</button>
+          <button type="submit">.</button>
+          <button type="submit">=</button>
+        </td>
+      </tr>
+    </table>
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script src="js/eruda"></script>
+  <script src="eruda-dom/eruda-dom.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    eruda.init();
+    eruda.show();
+    eruda.add(erudaDom)
+  </script>
+  <script src="js/65_script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

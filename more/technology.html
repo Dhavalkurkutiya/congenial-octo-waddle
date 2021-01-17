@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
+  <!-- Android Chrome -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!-- ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>News Hunter By - Dhavalkurkutiya</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="icon/fav-icon.png" type="image/x-icon" />
+  <!-- Template core CSS -->
+  <link href="template.min.css" rel="stylesheet">
+  <style type="text/css" media="all">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background-color: #fed330;
+      padding: 10px;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+    }
+    header ul {
+      display: flex;
+      text-align: center;
+      padding: 0px 5px;
+    }
+    header ul li {
+      margin: auto;
+      list-style: none;
+      padding: 5px;
+    }
+    header ul li a {
+      text-decoration: none;
+      
+    }
+    .center {
+      text-align: center;
+    }
+    .imgsize {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+    .newsAuther {
+      display: block;
+      text-align: right;
+      padding-right: 5px;
+    }
+    a {
+      text-decoration: none;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .article {
+      background-color: #20bf6b;
+      background-color: whitesmoke;
+      box-shadow: 2px 2px 20px rgba(90,118,253,0.15);
+      background-color: #fff;
+      padding: 20px;
+      margin-top: 10%;
+    }
+    .newsBox {
+      background-color: #20bf6b;
+      background-color: whitesmoke;
+      box-shadow: 2px 2px 20px rgba(90,118,253,0.15);
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+
+    }
+
+    #newsAccordion {
+      margin-top: 10%;
+    }
+    footer {
+      padding: 20px;
+      background-color: #fd9644;
+    }
+  </style>
+</head>
+<!-- Head -->
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../40_Project 3 Creating a news website.html">Home</a></li>
+        <li><a href="health.html">Health</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="science.html">Science</a></li>
+        <li><a href="business.html">Business</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="entertainment.html">Entertainment</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="wrapper">
+    <article id="newsAccordion">
+    </article>
+    <footer>
+      Footer
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/eruda" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    eruda.init()
+    eruda.show();
+    //eruda.show('console');
+    //console.log(eruda);
+  </script>
+  <script src="js/technology.js" type="text/javascript" charset="utf-8"></script>
+  <!-- Scripts -->
+</body>
+</html>

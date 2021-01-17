@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
+  <!-- Android Chrome -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!-- ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <style type="text/css" media="all">
+    h2 {
+      
+      text-align: center;
+      padding: 10px 20px 10px 20px;
+      background: #edeef6;
+      border-radius: 5px;
+      color: #777474;
+    }
+    .red{
+      background: red;
+    }
+  </style>
+  <title>12_Understanding DOM & Creating a Website Layout</title>
+</head>
+
+<body>
+  <h2>12_Understanding DOM & Creating a Website Layout</h2>
+  <div class="container">
+    <div id="first" class="child red">child-1</div>
+    <div class="child">child-2</div>
+    <div class="child">child-3</div>
+    <div class="child red">child-4</div>
+    <div class="child">child-5</div>
+    <a href="//google.com">Google</a>
+    <a href="//facebook.com">Fcebook</a>
+  </div>
+  
+  <script src="js/eruda" type="text/javascript" charset="utf-8"></script>
+  
+  <script type="text/javascript" charset="utf-8">
+    eruda.init()
+    eruda.show();
+  </script>
+  <script src="
+  js/12_script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

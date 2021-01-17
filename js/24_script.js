@@ -1,0 +1,24 @@
+let today =  Date();
+// console.log(today);
+let otherDate = new Date('08-04-2003 04:54:08');
+otherDate = new Date('june 13 1979');
+otherDate = new Date('09/30/1976');
+// console.log(otherDate); 
+let a;
+a = otherDate.getDay();
+a = otherDate.getDate();
+a = otherDate.getSeconds();
+a = otherDate.getMinutes();
+a = otherDate.getHours();
+a = otherDate.getTime();
+a = otherDate.getMilliseconds();
+a = otherDate.getMonth();
+console.log(a);
+otherDate.setDate(23);
+otherDate.setMonth(5);
+otherDate.setFullYear(2389);
+otherDate.setHours(1);
+otherDate.setMinutes(2);
+otherDate.setSeconds(3);
+otherDate.setMilliseconds(4);
+console.log(otherDate)

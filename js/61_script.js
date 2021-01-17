@@ -1,0 +1,1 @@
+console.log('61_Exasize-6 Creating wall clock');
